@@ -9,19 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+// import { Router }           from '@angular/router';
+var DashboardComponent = (function () {
+    function DashboardComponent() {
     }
-    AppComponent = __decorate([
+    DashboardComponent.prototype.ngOnInit = function () {
+        this.title = "Hello from the Dashboard";
+    };
+    DashboardComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n\t\t<h1 class=\"alert alert-info\" style=\"color:#555555;text-align:center;\">\n\t\t\tMy First Angular 2 App!\n\t\t</h1>\n\t\t<router-outlet></router-outlet>",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'my-dashboard',
+            templateUrl: 'app/dashboard/dashboard.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.DashboardComponent = DashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map
