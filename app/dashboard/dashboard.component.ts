@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Router }           from '@angular/router';
+import { Router }           from '@angular/router';
 
 @Component({
   selector: 'my-dashboard',
@@ -10,14 +10,17 @@ export class DashboardComponent implements OnInit {
   title: string;
 
   constructor(
+    // private router: Router
     ) {
   }
 
   ngOnInit() {
     this.title = "Hello from the Dashboard"
+    let router = Router
+    console.log(Router, this)
   }
 
-  // gotoLocations() {
-  //   this.router.navigate(['/locations']);
-  // }
+  gotoLocations() {
+    this.router.navigate(['/locations']);
+  }
 }
