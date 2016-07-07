@@ -1,0 +1,36 @@
+.banner {
+	color: #555555;
+	text-align: center;
+	border-radius: 0;
+	padding: 30px;
+}
+
+.click-link {
+	text-decoration: underline;
+  color: cornflowerblue;
+}
+
+.click-link:hover {
+  cursor: pointer;
+  font-weight: 400;
+  color: lightgreen;
+  background-color: #555555;
+  -webkit-transition: all 350ms linear;
+  -moz-transition: all 350ms linear;
+  -o-transition: all 350ms linear;
+}
+
+.router-link {
+	text-decoration: underline;
+  color: cornflowerblue;
+}
+
+.router-link:hover {
+  cursor: pointer;
+  font-weight: 400;
+  color: #00004d; /* dark blue */
+  background-color: papayawhip;
+  -webkit-transition: all 350ms linear;
+  -moz-transition: all 350ms linear;
+  -o-transition: all 350ms linear;
+}

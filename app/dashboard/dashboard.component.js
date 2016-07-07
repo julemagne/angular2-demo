@@ -9,23 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+// import { Router }           from '@angular/router';
 var DashboardComponent = (function () {
-    function DashboardComponent(router) {
-        this.router = router;
+    function DashboardComponent() {
     }
     DashboardComponent.prototype.ngOnInit = function () {
         this.title = "Hello from the Dashboard";
-    };
-    DashboardComponent.prototype.gotoLocations = function () {
-        this.router.navigate(['/locations']);
     };
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
             templateUrl: 'app/dashboard/dashboard.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], DashboardComponent);
     return DashboardComponent;
 }());

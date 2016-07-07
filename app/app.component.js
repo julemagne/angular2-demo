@@ -17,7 +17,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n\t\t<h1 class=\"alert alert-info\" style=\"color:#555555;text-align:center;\">\n\t\t\tMy First Angular 2 App!\n\t\t</h1>\n\t\t<router-outlet></router-outlet>",
+            templateUrl: './app/app.component.html',
             precompile: [dashboard_component_1.DashboardComponent, locations_component_1.LocationsComponent]
         }), 
         __metadata('design:paramtypes', [])

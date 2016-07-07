@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { APP_ROUTER_PROVIDERS } from '../app.routes';
 
 @Component({
   selector: 'locations',
