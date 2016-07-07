@@ -6,7 +6,8 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "typings": "typings"
+    "typings": "typings",
+    "test": "npm start --open=src/unit-tests.html"
   },
   "license": "ISC",
   "dependencies": {
