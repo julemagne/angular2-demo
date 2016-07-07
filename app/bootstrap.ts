@@ -9,5 +9,5 @@ import { APP_ROUTER_PROVIDERS } from './app.routes';
 bootstrap(AppComponent, [
   APP_ROUTER_PROVIDERS,
   HTTP_PROVIDERS,
-  {provide: PLATFORM_DIRECTIVES, useValue: [ROUTER_DIRECTIVES], multi: true})
+  {provide: PLATFORM_DIRECTIVES, useValue: [ROUTER_DIRECTIVES], multi: true}
 ])
