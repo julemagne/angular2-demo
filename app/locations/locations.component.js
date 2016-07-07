@@ -11,18 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var LocationsComponent = (function () {
-    function LocationsComponent(_router) {
-        this._router = _router;
+    function LocationsComponent(router) {
+        this.router = router;
     }
     LocationsComponent.prototype.ngOnInit = function () {
         this.title = "Locations";
-        // this.router = Router
-        // console.log(this.router)
-        // console.log(APP_ROUTER_PROVIDERS)
-        // this.router.navigate(['/dashboard']);
     };
     LocationsComponent.prototype.gotoDashboard = function () {
-        // APP_ROUTER_PROVIDERS[0][6].provide.navigate(['/dashboard']);
+        this.router.navigate(['/dashboard']);
     };
     LocationsComponent = __decorate([
         core_1.Component({

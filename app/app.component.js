@@ -9,7 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var dashboard_component_1 = require('./dashboard/dashboard.component');
+var locations_component_1 = require('./locations/locations.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -17,7 +18,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             template: "\n\t\t<h1 class=\"alert alert-info\" style=\"color:#555555;text-align:center;\">\n\t\t\tMy First Angular 2 App!\n\t\t</h1>\n\t\t<router-outlet></router-outlet>",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            precompile: [dashboard_component_1.DashboardComponent, locations_component_1.LocationsComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

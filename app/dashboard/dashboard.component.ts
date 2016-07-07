@@ -10,14 +10,12 @@ export class DashboardComponent implements OnInit {
   title: string;
 
   constructor(
-    // private router: Router
+    private router: Router
     ) {
   }
 
   ngOnInit() {
     this.title = "Hello from the Dashboard"
-    let router = Router
-    console.log(Router, this)
   }
 
   gotoLocations() {

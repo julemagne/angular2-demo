@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES }  from '@angular/router';
+
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LocationsComponent } from './locations/locations.component';
 
 @Component({
   selector: 'my-app',
@@ -8,6 +10,6 @@ import { ROUTER_DIRECTIVES }  from '@angular/router';
 			My First Angular 2 App!
 		</h1>
 		<router-outlet></router-outlet>`,
-  directives: [ROUTER_DIRECTIVES]
+  precompile: [DashboardComponent, LocationsComponent]
 })
 export class AppComponent { }

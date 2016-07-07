@@ -11,12 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var DashboardComponent = (function () {
-    function DashboardComponent() {
+    function DashboardComponent(router) {
+        this.router = router;
     }
     DashboardComponent.prototype.ngOnInit = function () {
         this.title = "Hello from the Dashboard";
-        var router = router_1.Router;
-        console.log(router_1.Router, this);
     };
     DashboardComponent.prototype.gotoLocations = function () {
         this.router.navigate(['/locations']);
@@ -26,7 +25,7 @@ var DashboardComponent = (function () {
             selector: 'my-dashboard',
             templateUrl: 'app/dashboard/dashboard.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], DashboardComponent);
     return DashboardComponent;
 }());
